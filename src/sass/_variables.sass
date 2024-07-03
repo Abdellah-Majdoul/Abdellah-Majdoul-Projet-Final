@@ -1,2 +1,14 @@
 @import ../../node_modules/bootstrap/scss/functions
 @import ../../node_modules/bootstrap/scss/_variables
+
+$space: 1vh
+
+$spacers: (0:0)
+
+@for $i from 1 through 150
+     $spacers: map-merge( $spacers,($i:($i*$space) ))
+     
+
+$color: #ffa012
+$customColors:("clYellow":$color)
+$theme-colors: map-merge($theme-colors,$customColors)
