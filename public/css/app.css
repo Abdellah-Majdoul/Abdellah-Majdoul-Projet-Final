@@ -69674,8 +69674,12 @@ textarea.form-control-lg {
 }
 .titre-contact p {
   text-align: center;
-  width: 40vw;
+  width: 55vw;
   margin: 0px;
+}
+
+.eventsContact {
+  padding-bottom: 10vh;
 }
 
 .content {
