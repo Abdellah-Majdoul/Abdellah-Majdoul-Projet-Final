@@ -69674,12 +69674,8 @@ textarea.form-control-lg {
 }
 .titre-contact p {
   text-align: center;
-  width: 55vw;
+  width: 40vw;
   margin: 0px;
-}
-
-.eventsContact {
-  padding-bottom: 10vh;
 }
 
 .content {
@@ -69719,6 +69715,19 @@ textarea {
 
 .fiveSection {
   padding-buttom: 10vh;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.image-gallery .photo {
+  overflow: hidden;
+}
+.image-gallery .photo img:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=app.css.map */
