@@ -69565,9 +69565,47 @@ textarea.form-control-lg {
   background-color: #ffa012;
 }
 
+label #btn,
+label #canel {
+  color: black;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
 @media (max-width: 428px) {
-  .right-side ul li {
-    display: none;
+  .navbare {
+    width: 100vw;
+  }
+  .right-side {
+    position: fixed;
+    width: 50%;
+    height: 70vh;
+    background: black;
+    top: 17vh;
+    left: -100%;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .right-side ul {
+    gap: 2vh !important;
+    width: 71%;
+    flex-direction: column;
+  }
+  .right-side ul li a {
+    color: white;
+  }
+  .right-side label #canel {
+    display: block;
+  }
+  label #btn {
+    display: block;
+  }
+  #check:checked ~ .right-side {
+    left: 0;
   }
 }
 * {
@@ -69624,6 +69662,72 @@ textarea.form-control-lg {
   color: white;
 }
 
+@media (max-width: 428px) {
+  .SecondSection {
+    flex-direction: column;
+  }
+  .SecondSection video {
+    width: 100%;
+  }
+  .SecondSection .right {
+    width: 100%;
+  }
+  .second-thirdSection {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-thirdSection p {
+    width: 100%;
+  }
+  .Cards-section {
+    width: 100%;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding-bottom: 8vh;
+}
+.nav button {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 25px;
+  border: 2px solid #eca200;
+}
+.nav button:hover {
+  background: #ffb03b;
+}
+
+.contentMenu .leftMenu,
+.contentMenu .RightMenu {
+  width: 40vw;
+}
+.contentMenu .leftMenu p,
+.contentMenu .RightMenu p {
+  color: grey;
+  padding-inline: 1vw;
+}
+
+.containerMenu {
+  justify-content: space-between;
+}
+.containerMenu h4, .containerMenu .h4 {
+  color: #ff9b08;
+}
+
+@media (max-width: 428px) {
+  .contentMenu {
+    flex-direction: column;
+  }
+  .contentMenu .leftMenu .lf-div {
+    width: 100vw;
+  }
+  .contentMenu .RightMenu .rt-div {
+    width: 100vw;
+  }
+}
 .EventsSection {
   background-image: url(../img/events-bg.jpg);
   background-repeat: no-repeat;
@@ -69717,10 +69821,47 @@ textarea {
   border-radius: 25px;
 }
 
-.fiveSection {
-  padding-buttom: 10vh;
+.nav a {
+  text-decoration: none;
 }
 
+.left-special h1, .left-special .h1 {
+  font-family: "satisfy";
+}
+.left-special p {
+  width: 54vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SpecialSection {
+  padding: 2vh 7vh;
+}
+
+.special {
+  padding-top: 10vh;
+}
+
+@media (max-width: 428px) {
+  .SpecialSection {
+    flex-direction: column;
+  }
+  .left-side-menu {
+    flex-direction: column;
+  }
+  .left-side-menu p {
+    width: 107%;
+  }
+  .right-special {
+    display: flex;
+    justify-content: center;
+  }
+  .special .titre-contact p {
+    width: 90%;
+  }
+}
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -69734,6 +69875,14 @@ textarea {
   transform: scale(1.2);
 }
 
+@media (max-width: 428px) {
+  .Gallery .titre-contact p {
+    width: 100%;
+  }
+  .image-gallery .photo img {
+    width: 100%;
+  }
+}
 .mini-carousel {
   background-image: url(../img/testimonials-bg.jpg);
   height: 70vh;
@@ -69752,7 +69901,6 @@ textarea {
 }
 
 .contentCarousel {
-  text-align: center;
   padding-top: 10vh;
 }
 .contentCarousel img {
@@ -69760,15 +69908,18 @@ textarea {
 }
 
 .iconsMini i {
-  text-align: center;
   color: #ddc80e;
 }
 
 .paraghraphe {
-  width: 50%;
   text-align: center;
 }
 
+@media (max-width: 428px) {
+  .contentCarousel {
+    padding-top: 5vh;
+  }
+}
 .miniContact {
   padding: 0vh 4vh;
 }
@@ -69795,6 +69946,59 @@ textarea {
 }
 .titre i:hover {
   background: rgba(175, 192, 23, 0.9176470588);
+<<<<<<< HEAD
+=======
+}
+
+.Contact {
+  padding-top: 5vh;
+}
+
+@media (max-width: 428px) {
+  .Contact .titre-contact p {
+    width: 100%;
+  }
+  .mini {
+    flex-direction: column;
+  }
+  .cartContact p {
+    padding-inline-start: 12vw;
+    width: 195%;
+  }
+  .content .content-contact {
+    flex-direction: column;
+  }
+  .content .content-contact input {
+    width: 100%;
+  }
+  .btn-card {
+    width: 50vw;
+  }
+}
+footer {
+  padding: 7vh 0vh;
+  background: #35322d;
+}
+
+.titreFooter h1, .titreFooter .h1 {
+  font-family: "satisfy";
+}
+
+.iconFooter i {
+  padding: 7px 9px;
+  background: rgba(0, 0, 0, 0.3450980392);
+  border-radius: 25px;
+}
+.iconFooter i:hover {
+  background: #ffb03b;
+}
+
+.design {
+  font-weight: "satisfy";
+}
+.design a {
+  text-decoration: none;
+>>>>>>> abdellah
 }
 
 /*# sourceMappingURL=app.css.map */
